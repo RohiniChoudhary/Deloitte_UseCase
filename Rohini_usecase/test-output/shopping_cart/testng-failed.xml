@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [shopping_cart]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="tests" name="BrowserStack Test - Chrome(failed)" verbose="3">
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Catalina"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser_version" value="85.0"/>
+    <classes>
+      <class name="shopping_cart.BrowserStack">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Scenario2"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- shopping_cart.BrowserStack -->
+    </classes>
+  </test> <!-- BrowserStack Test - Chrome(failed) -->
+  <test thread-count="3" parallel="tests" name="BrowserStack Test - Edge(failed)" verbose="3">
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="8.1"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="browser_version" value="81.0"/>
+    <classes>
+      <class name="shopping_cart.BrowserStack">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Scenario2"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- shopping_cart.BrowserStack -->
+    </classes>
+  </test> <!-- BrowserStack Test - Edge(failed) -->
+  <test thread-count="3" parallel="tests" name="BrowserStack Test - FF(failed)" verbose="3">
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="browser_version" value="80.0"/>
+    <classes>
+      <class name="shopping_cart.BrowserStack">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Scenario2"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- shopping_cart.BrowserStack -->
+    </classes>
+  </test> <!-- BrowserStack Test - FF(failed) -->
+</suite> <!-- Failed suite [shopping_cart] -->
