@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="shopping_cart.LocalTest_MultipleBrowser">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Scenario1"/>
+          <include name="Scenario2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- shopping_cart.LocalTest_MultipleBrowser -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
